@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pildi laadimine</title>
+</head>
+<body>
+<ul>
+    <li>
+        <a href="Praktikumide_leht.html">Pealeht</a>
+    </li>
+    <li>
+        <a href="Galerii.html">Galerii</a>
+    </li>
+</ul>
+<form action="Galerii.html" method="POST" enctype="multipart/form-data">
+    <h1>Registreeri</h1>
+    <table>
+        <tr>
+            <td>Pealkiri:</td>
+            <td><input type="text" name="pealkiri"></td>
+        </tr>
+        <tr>
+            <td>Autor:</td>
+            <td><input type="text" name="autor"></td>
+        </tr>
+        <tr>
+            <td>Suure pildi fail:</td>
+            <td><input type="file" name="suur"></td>
+        </tr>
+        <tr>
+            <td>Väikse pildi fail:</td>
+            <td><input type="file" name="pisike"></td>
+        </tr>
+    </table><br>
+    <button type="SUBMIT">Lae pilt</button><br>
+
+</form>
+</body>
+</html>
