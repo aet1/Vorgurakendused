@@ -1,0 +1,67 @@
+body {
+    background-color: lightcyan;
+}
+
+#lehe_pealkiri {
+    color: #800000;
+    font-family: SansSerif, sans-serif;
+}
+
+h3 {
+    color: #191970;
+    font-family: SansSerif,sans-serif
+}
+
+/*
+.sisu {
+    background-color: #add8e6;
+}
+*/
+
+.menu {
+    color: #D2691E;
+    list-style-type: circle;
+    font-family: SansSerif, sans-serif;
+}
+
+.menu_link {
+    color: #D2691E;
+    text-decoration: none;
+    font-family: SansSerif, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu_link:hover {
+    text-decoration: underline;
+    color: gold;
+}
+
+.lingid {
+    color: darkgreen;
+}
+
+.lingid:hover {
+    font-weight: bold;
+    color: dimgrey;
+}
+
+.sisu_tekst {
+    background-color: azure;
+    font-size: 14px;
+    font-family: SansSerif, sans-serif;
+}
+
+#tekst {
+    color: maroon;
+    font-size: 18px;
+    font-family: SansSerif, sans-serif;
+}
+
+.pilt {
+    border: double;
+}
+
+#validator_logo {
+    border: none;
+}
