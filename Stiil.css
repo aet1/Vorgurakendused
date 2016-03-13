@@ -2,7 +2,8 @@ body {
     background-color: lightcyan;
 }
 
-#lehe_pealkiri {
+h1 {
+    padding: 36px;;
     color: #800000;
     font-family: SansSerif, sans-serif;
 }
@@ -12,20 +13,35 @@ h3 {
     font-family: SansSerif,sans-serif
 }
 
-/*
 .sisu {
-    background-color: #add8e6;
+    background-color: azure;
+    max-width: 1000px;
+    min-width: 600px;
+    margin:auto;
 }
-*/
+
 
 .menu {
-    color: #D2691E;
-    list-style-type: circle;
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: navy;
+    list-style-type: none;
+    margin:0;
+    max-width: 1000px;
+    min-width: 600px;
+    padding: 0;
+    overflow: hidden;
     font-family: SansSerif, sans-serif;
 }
 
 .menu_link {
-    color: #D2691E;
+    float: left;
+    color: azure;
+    border-right: 1px solid azure;
+    display: block;
+    text-align: center;
+    padding:14px 16px;
     text-decoration: none;
     font-family: SansSerif, sans-serif;
     font-weight: bold;
@@ -34,7 +50,7 @@ h3 {
 
 .menu_link:hover {
     text-decoration: underline;
-    color: gold;
+    background-color: silver;
 }
 
 .lingid {
@@ -47,7 +63,6 @@ h3 {
 }
 
 .sisu_tekst {
-    background-color: azure;
     font-size: 14px;
     font-family: SansSerif, sans-serif;
 }
