@@ -1,0 +1,35 @@
+/*Luua uus tabel 'loomaaed'*/
+CREATE TABLE audusaar_loomaaed (
+id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nimi VARCHAR(150),
+vanus INTEGER,
+liik VARCHAR(150),
+puur INTEGER);
+
+/*T2ita eelnevalt loodud tabel v2hemalt 5 reaga*/
+INSERT INTO audusaar_loomaaed (nimi, vanus, liik, puur) VALUES
+('Neewa', 1, 'karu', 2),
+('Noozak', 24, 'karu', 2),
+('Sophie', 3, 'kaelkirjak', 5),
+('Pepe', 3, 'okaapi', 5),
+('Lola', 2, 'surikaat', 19),
+('Zorro', 3, 'surikaat', 19),
+('Axel', 4, 'luitekass', 44),
+('Punk', 6, 'tupaia', 25),
+('Frank', 10, 'miilu', 13),
+('Daisy', 8, 'kabehirv', 14);
+
+
+/*P2ringud*/
+
+/*Hankida k6igi mingis yhes kindlas puuris elavate loomade nimi ja puuri number*/
+SELECT nimi, puur FROM audusaar_loomaaed WHERE puur=5;
+
+/*Hankida vanima ja noorima looma vanused*/
+SELECT MAX(vanus) as vanim, MIN(vanus) as noorim FROM audusaar_loomaaed;
+
+/*hankida puuri number koos selles elavate loomade arvuga (vihjeks: group by ja count )*/
+SELECT puur, COUNT(*) FROM audusaar_loomaaed GROUP BY puur;
+
+/*suurendada k6iki tabelis olevaid vanuseid 1 aasta v6rra*/
+UPDATE audusaar_loomaaed SET vanus=vanus+1;
